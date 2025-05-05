@@ -1,0 +1,168 @@
+/* Container */
+.company-detail-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9fafb;
+    min-height: 100vh;
+    padding: 3rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  /* Card */
+  .company-detail-box {
+    background: #ffffff;
+    max-width: 720px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    padding: 2.5rem 3rem;
+    box-sizing: border-box;
+  }
+  
+  /* Header */
+  .company-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .company-logo {
+    width: 96px;
+    height: 96px;
+    object-fit: contain;
+    border-radius: 50%;
+    background-color: #f3f4f6;
+    border: 1px solid #d1d5db;
+    padding: 0.5rem;
+  }
+  
+  .company-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #111827;
+    margin: 0;
+  }
+  
+  /* Description */
+  .company-description {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #4b5563;
+    margin-bottom: 3rem;
+  }
+  
+  /* Job Openings */
+  .job-openings h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1e40af;
+    border-bottom: 2px solid #bfdbfe;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .job-openings ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .job-list-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #eff6ff;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .job-list-item:hover {
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.2);
+  }
+  
+  .job-title {
+    font-weight: 600;
+    color: #1e3a8a;
+    flex: 1 1 40%;
+  }
+  
+  .job-location,
+  .job-deadline {
+    color: #374151;
+    font-size: 0.9rem;
+    flex: 1 1 25%;
+    text-align: right;
+  }
+  
+  /* Application Form */
+  .application-form-section h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1e40af;
+    border-bottom: 2px solid #bfdbfe;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .application-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .application-form label {
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  .application-form input[type="text"],
+  .application-form input[type="email"],
+  .application-form input[type="file"] {
+    padding: 0.75rem 1rem;
+    border: 1.5px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .application-form input[type="text"]:focus,
+  .application-form input[type="email"]:focus,
+  .application-form input[type="file"]:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 8px rgba(37, 99, 235, 0.4);
+  }
+  
+  .submit-btn {
+    background-color: #2563eb;
+    color: white;
+    font-weight: 700;
+    font-size: 1.125rem;
+    padding: 0.85rem 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #1e40af;
+  }
+  
+  /* Not found */
+  .not-found {
+    font-size: 1.5rem;
+    color: #ef4444;
+    text-align: center;
+    padding: 3rem;
+  }
+  

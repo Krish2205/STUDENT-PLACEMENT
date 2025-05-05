@@ -1,0 +1,85 @@
+/* Admin.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f4f6; /* Tailwind gray-100 */
+}
+
+h1 {
+  color: #111827; /* Tailwind gray-900 */
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 1rem;
+  color: #374151; /* Tailwind gray-700 */
+}
+
+thead tr {
+  background-color: #e5e7eb; /* Tailwind gray-200 */
+}
+
+th, td {
+  border: 1px solid #d1d5db; /* Tailwind gray-300 */
+  padding: 0.75rem 1rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9fafb; /* Tailwind gray-50 */
+}
+
+tbody tr:hover {
+  background-color: #dbeafe; /* Tailwind blue-100 */
+  cursor: pointer;
+}
+
+td > div {
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+  color: #1e40af; /* Tailwind blue-800 */
+}
+
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead tr {
+    display: none;
+  }
+
+  tbody tr {
+    margin-bottom: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: #fff;
+  }
+
+  tbody td {
+    border: none;
+    padding-left: 50%;
+    position: relative;
+    text-align: left;
+  }
+
+  tbody td::before {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 45%;
+    white-space: nowrap;
+    font-weight: 700;
+    color: #374151;
+  }
+
+  tbody td:nth-of-type(1)::before { content: "Name"; }
+  tbody td:nth-of-type(2)::before { content: "Email"; }
+  tbody td:nth-of-type(3)::before { content: "Phone"; }
+  tbody td:nth-of-type(4)::before { content: "Graduation"; }
+  tbody td:nth-of-type(5)::before { content: "Applications"; }
+}

@@ -1,0 +1,128 @@
+.home-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f4f6;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  max-width: 1400px; /* Wide enough for 4 cards */
+  margin: 0 auto;
+}
+
+.home-heading,
+.news-heading {
+  color: #1e293b;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+/* Fixed 4-column grid */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.company-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.07);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.3s;
+  height: 100%;
+}
+
+.company-card:hover {
+  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.08);
+}
+
+.company-logo {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  background: #f1f5f9;
+  border: 1px solid #e5e7eb;
+}
+
+.company-name {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  color: #0f172a;
+}
+
+.view-details-btn {
+  background-color: #2563eb;
+  color: #fff;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-top: auto;
+  transition: background 0.2s;
+}
+
+.view-details-btn:hover {
+  background-color: #1e40af;
+}
+
+.news-list {
+  margin-left: 2rem;
+  font-size: 1.05rem;
+  color: #334155;
+  line-height: 1.7;
+}
+
+/* Optional: Make grid horizontally scrollable on very small screens */
+@media (max-width: 600px) {
+  .home-grid {
+    grid-template-columns: repeat(4, 250px);
+    overflow-x: auto;
+    padding-bottom: 1rem;
+  }
+}
+
+.home-heading,
+.news-heading {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 900;
+  font-size: 2.75rem; /* Larger size */
+  color: #2563eb; /* Tailwind blue-600 */
+  margin-bottom: 2.5rem;
+  text-align: center; /* Centered for emphasis */
+  letter-spacing: 0.05em;
+  position: relative;
+  padding-bottom: 0.5rem;
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: color 0.3s ease;
+}
+
+.home-heading::after,
+.news-heading::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #2563eb;
+  margin: 0.75rem auto 0;
+  border-radius: 2px;
+  box-shadow: 0 0 8px #2563eb;
+}
+
+/* Optional hover effect */
+.home-heading:hover,
+.news-heading:hover {
+  color: #1e40af;
+  cursor: default;
+  background: linear-gradient(90deg, #1e40af, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
